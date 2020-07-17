@@ -5,9 +5,13 @@
 int main()
 {
     Vm newvm = Vm();
-    Task newtask = Task();
-    newtask.mips=1000;
-    newtask.run();
+    Task taskOne = Task();
+    taskOne.mips=1000;
+    Task taskTwo = Task();
+    taskTwo.mips = 1000;
+    newvm.assaignTask(taskOne);
+    newvm.assaignTask(taskTwo);
+    newvm.run();
 }
 
 //TODO CreateTask, CreateVm functions maybe usefull
