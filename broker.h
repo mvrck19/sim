@@ -10,8 +10,6 @@ private:
     std::vector<Task> tasks;
     std::vector<Vm> vms;
 public:
-    broker(/* args */);
-    ~broker();
     void addTask(Task task){
         tasks.push_back(task);
     }
@@ -19,11 +17,3 @@ public:
         tasks.insert(tasks.end(),t.begin(),t.end());
     }
 };
-
-
-
-broker::broker(/* args */){
-}
-
-broker::~broker(){
-}
