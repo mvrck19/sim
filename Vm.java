@@ -11,6 +11,10 @@ public class Vm {
     long numberOfPes = 2;
     ArrayList<Task> assignedTasks;
 
+    Vm(){
+        assignedTasks = new ArrayList<Task>();
+    }
+
     void assaignTask(Task task) {
         assignedTasks.add(task);
     }
@@ -21,7 +25,7 @@ double run(){
             assignedTasks.remove(0);
             executionTime = executionTime + task.mips / mipsCapacity;
         }
-        System.out.println("Seconds: %f" + executionTime);
+        System.out.println("Seconds: " + executionTime);
         return executionTime;
     }
 };
