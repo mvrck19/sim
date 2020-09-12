@@ -8,6 +8,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Basic",
             "request": "launch",
+            "mainClass": "Basic",
+            "projectName": "sim_67b1721f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Basic",
+            "request": "launch",
             "mainClass": "Java.Basic",
             "projectName": "sim_67b1721f"
         },
